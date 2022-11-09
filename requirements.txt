@@ -1,0 +1,6 @@
+numpy
+tensorflow==2.8.2
+flask
+flask_cors
+flask-bcrypt
+underthesea

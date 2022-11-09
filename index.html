@@ -1,0 +1,34 @@
+<h1>Nhóm 9 - Phân Loại Comment</h1>
+<input type="text" id="txttext"/>
+
+<button id="btnsend">predict</button>
+
+<h3 id="label">respons label</h3>
+<!-- <button id="acc" disabled>accuracy 0%</button> -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+    // Code Jquery
+    $(document).ready(function() {
+        $("#btnsend").click(function() {
+            var datas = {
+                'comment': $('#txttext').val().trim()
+            };
+            $.ajax({
+                type: "POST",
+                url: "predict",
+                data: datas,
+                success: function(respone) {
+                    console.log(respone)
+                    //const label = respone.split('|')[0];
+                    //const accuracy = respone.split('|')[1];
+                    //$('#label').html(label);
+                    //$('#acc').html(accuracy);
+                    $('#label').html(respone);
+                }
+            });
+        });
+    })
+</script>

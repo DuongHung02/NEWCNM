@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1013f470-a984-4944-9317-57d5de87f99e/AppServices/subscriptions/1013f470-a984-4944-9317-57d5de87f99e/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/plcmt",
+    "appService.deploySubpath": "."
+}
